@@ -1,0 +1,17 @@
+1 Create a new project
+2 Select the project
+3 Open App Engine
+4 Create a new application
+5 Click on next
+6 Scroll down and click on I'll do this later
+7 In search bar type App Engine Admin API
+8 Click enables
+9 Activate Cloud Shell
+10 login with github account and click on new repo
+11 Give name to repo and click Create
+12 Click on creating new file
+13 Give name to python file and type code
+14 Click on code and copy URL
+15 Go to cloud and type- git clone and paste URL
+16 Type ls, enter, cd (repo_name), ls
+17 Run python code using python (program_name)
