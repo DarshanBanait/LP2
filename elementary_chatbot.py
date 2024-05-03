@@ -1,4 +1,4 @@
-import random
+import secrets
 
 # Define responses for the chatbot
 responses = {
@@ -17,21 +17,21 @@ def get_response(user_input):
     user_input = user_input.lower()
 
     if user_input in responses:
-        return random.choice(responses[user_input])
+        return secrets.choice(responses[user_input])
     elif "name" in user_input:
-        return random.choice(responses["your name"])
+        return secrets.choice(responses["your name"])
     elif "support" in user_input:
-        return random.choice(responses["customer support"])
+        return secrets.choice(responses["customer support"])
     elif "help" in user_input:
-        return random.choice(responses["help"])
+        return secrets.choice(responses["help"])
     elif "information" in user_input or "info" in user_input:
-        return random.choice(responses["information"])
+        return secrets.choice(responses["information"])
     elif "bye" in user_input or "goodbye" in user_input:
-        return random.choice(responses["bye"])
+        return secrets.choice(responses["bye"])
     elif user_input.startswith("hi") or user_input.startswith("hello"):
-        return random.choice(responses["hi"])
+        return secrets.choice(responses["hi"])
     else:
-        return random.choice(responses["default"])
+        return secrets.choice(responses["default"])
 
 def chat_with_user():
     print("Welcome! How can I assist you today?")
