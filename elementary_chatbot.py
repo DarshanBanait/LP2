@@ -28,7 +28,7 @@ def get_response(user_input):
         return random.choice(responses["information"])
     elif "bye" in user_input or "goodbye" in user_input:
         return random.choice(responses["bye"])
-    elif user_input.startswith("hi") or user_input.startswith("hello"):
+    elif user_input.startswith(("hi", "hello")):
         return random.choice(responses["hi"])
     else:
         return random.choice(responses["default"])
